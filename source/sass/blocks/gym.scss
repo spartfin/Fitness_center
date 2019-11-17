@@ -1,4 +1,5 @@
 .gym {
+  position: relative;
   display: flex;
   max-width: 1366px;
   min-height: 756px;
@@ -101,7 +102,7 @@
   }
 }
 
-.gym__info_description--mod {
+.gym__info_description_mod {
   display: none;
 
   @media (max-width: $tablet-width) {

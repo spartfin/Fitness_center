@@ -1,0 +1,290 @@
+.subscription {
+  min-height: 851px;
+  background-color: #f8f9fc;
+  padding-top: 110px;
+  padding-bottom: 120px;
+  background-image: url("../img/fitness-pancakes.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 504px;
+
+  @media (max-width: $tablet-width) {
+    min-height: 1779px;
+    padding-top: 41px;
+    padding-bottom: 100px;
+    background-image: url("../img/fitness-pancakes-midlle.png");
+    background-position-y: 1404px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 1487px;
+    padding-top: 68px;
+    padding-bottom: 30px;
+    background-image: none;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.subscription__title {
+  font-family: $textBebasCyrillic;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #102654;
+  text-align: center;
+
+  @media (max-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.subscription__months {
+  list-style: none;
+  display: flex;
+  max-width: 338px;
+  justify-content: space-between;
+  margin: 0 auto;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+  margin-top: 39px;
+  padding-bottom: 13px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 31px;
+    padding-bottom: 13px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 21px;
+    padding-bottom: 13px;
+  }
+}
+
+.subscription__months_item {
+  font-family: $textRoboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  /* or 30px */
+  color: rgba(16, 38, 84, 0.5);
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 150%;
+    /* or 27px */
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+  }
+}
+
+.subscription__item_one-month,
+.subscription__item_six-months,
+.subscription__item_twelve-months {
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.subscription__months_item_active {
+  position: relative;
+  border-bottom: 2px solid #d10a42;
+  padding-bottom: 14px;
+  margin-bottom: -15px;
+  color: #102654;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.subscription__cards {
+  list-style: none;
+  display: flex;
+  max-width: 1180px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 39px;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    padding-left: 163px;
+    padding-right: 163px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.subscription__cards_item {
+  background-color: #ffffff;
+  min-height: 448px;
+  max-width: 360px;
+  flex-grow: 1;
+  flex-basis: 1;
+  width: calc(33.33% - 40px);
+  margin-bottom: 20px;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 35px;
+    min-height: 384px;
+  }
+
+  &:nth-child(3n + 2) {
+    margin-left: 40px;
+    margin-right: 40px;
+
+    @media (max-width: $tablet-width) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  &:hover {
+    background-image: url("../img/backround-card.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    .subscription__cards_item-buy {
+      background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
+      color: #ffffff;
+      border: none;
+    }
+  }
+}
+
+.subscription__cards_item-title {
+  font-family: $textRoboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 29px;
+  color: #102654;
+  text-align: center;
+  margin-top: 59px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 67px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 22px;
+    line-height: 110.16%;
+    /* or 24px */
+    margin-top: 45px;
+  }
+}
+
+.subscription__cards_item-service {
+  font-family: $textRoboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+  color: #495a7d;
+  text-align: center;
+  margin-top: 11px;
+}
+
+.subscription__cards_item-cost {
+  font-family: $textRoboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 150%;
+  /* or 150px */
+  color: #e8e8e8;
+  opacity: 0.48;
+  text-align: center;
+
+  @media (max-width: $mobile-width) {
+    font-size: 80px;
+    line-height: 150%;
+    /* or 120px */
+    margin-top: 10px;
+  }
+}
+
+.subscription__cards_item-price {
+  position: relative;
+  width: 166px;
+  font-family: $textRoboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 150%;
+  /* or 90px */
+  color: #103aae;
+  margin: 0 auto;
+  margin-top: -83px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 42px;
+    background-image: url("../img/ruble.png");
+    top: 24px;
+    right: 0;
+
+    @media (max-width: $mobile-width) {
+      width: 24px;
+      height: 33px;
+      background-size: cover;
+      top: 22px;
+      right: -3px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 132px;
+    font-size: 48px;
+    line-height: 150%;
+    /* or 72px */
+    margin-top: -78px;
+  }
+}
+
+.subscription__cards_item-buy {
+  display: flex;
+  max-width: 206px;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  font-family: $textRoboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #102654;
+  border: 2px solid #102654;
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 31px;
+}
