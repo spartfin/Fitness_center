@@ -1,0 +1,245 @@
+.trainers {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding-right: 60px;
+  padding-left: 60px;
+
+  @media (max-width: $tablet-width) {
+    padding-right: 101px;
+    padding-left: 101px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-right: 47px;
+    padding-left: 47px;
+    margin-top: -4px;
+  }
+}
+
+.trainers__title {
+  font-family: $textBebasCyrillic;
+  max-width: 1160px;
+  width: 100%;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #102654;
+  margin-bottom: 53px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (max-width: $tablet-width) {
+    max-width: 100%;
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.trainers__list {
+  position: relative;
+  list-style: none;
+  display: flex;
+  max-width: 1160px;
+  margin-bottom: 150px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.trainers__click_left {
+  position: absolute;
+  left: -56px;
+  top: calc(50% - 19px);
+  cursor: pointer;
+
+  @media (max-width: $mobile-width) {
+    left: -32px;
+    top: calc(50% - 10px);
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.trainers__click_right {
+  position: absolute;
+  right: -56px;
+  top: calc(50% - 19px);
+  cursor: pointer;
+
+  @media (max-width: $mobile-width) {
+    right: -32px;
+    top: calc(50% - 10px);
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.trainers__click_left svg,
+.trainers__click_right svg {
+  @media (max-width: $mobile-width) {
+    width: 10px;
+    height: 19px;
+  }
+}
+
+.trainers__list_card {
+  position: relative;
+  min-height: 300px;
+  margin-right: 40px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 30px;
+    width: 100%;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 274px;
+    margin-right: 0;
+  }
+
+  &:nth-child(6) {
+    margin-right: 0;
+  }
+
+  &:hover {
+    .trainers__list_portfolio {
+      visibility: visible;
+      font-family: $textRoboto;
+      height: 296px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150%;
+      /* or 24px */
+      color: #b6bdcc;
+      background-color: rgba(16, 38, 84, 0.89);
+      margin: 0 auto;
+
+      @media (max-width: $mobile-width) {
+        height: 274px;
+      }
+    }
+  }
+}
+
+.trainers__list_card-anna,
+.trainers__list_card-aleksey {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.trainers__list_card-maria {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.trainers__list_card img {
+  height: 295px;
+  width: 100%;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (max-width: $mobile-width) {
+    height: 274px;
+  }
+}
+
+.trainers__list_portfolio {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $mobile-width) {
+    height: 274px;
+  }
+}
+
+.trainers__list_card-name {
+  font-family: $textRoboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+  color: #ffffff;
+  margin-top: -57px;
+  text-align: center;
+}
+
+.trainers__list_portfolio-name {
+  font-family: $textRoboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+  color: #ffffff;
+  padding-top: 52px;
+  margin-bottom: -4px;
+
+  @media (max-width: $mobile-width) {
+    padding-top: 41px;
+  }
+}
+
+.trainers__list_portfolio-list {
+  list-style: none;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  width: 196px;
+  margin: 0 auto;
+  margin-top: 33px;
+}
+
+.trainers__list_portfolio-list li {
+  position: relative;
+  padding-left: 16px;
+  padding-bottom: 8px;
+  margin-left: 20px;
+
+  @media (max-width: $mobile-width) {
+    font-family: $textRoboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    /* or 21px */
+    color: #ffffff;
+    padding-bottom: 13px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-image: url("../img/circle-backround.png");
+    top: 8px;
+    left: 0;
+  }
+}
