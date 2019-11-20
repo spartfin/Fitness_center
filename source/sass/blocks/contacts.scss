@@ -234,7 +234,9 @@
 }
 
 .contacts__info_schedule-address p,
-.contacts__info_communication p {
+.contacts__info_communication p,
+.contacts__info_schedule-address a,
+.contacts__info_communication a {
   font-family: $textRoboto;
   font-style: normal;
   font-weight: normal;
@@ -246,6 +248,13 @@
     font-size: 18px;
     line-height: 152.34%;
     /* or 27px */
+  }
+}
+
+.contacts__info_schedule-address a,
+.contacts__info_communication a {
+  &:hover {
+    opacity: 0.5;
   }
 }
 
