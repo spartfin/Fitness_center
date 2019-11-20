@@ -1,3 +1,4 @@
+/* eslint-disable new-cap */
 'use strict';
 
 (function () {
@@ -39,6 +40,11 @@
     itemSixMonths.classList.remove('subscription__months_item_active');
     itemOneMonth.classList.remove('subscription__months_item_active');
     itemTwelveMonths.classList.add('subscription__months_item_active');
+  });
+
+  // eslint-disable-next-line no-undef
+  IMask(document.getElementById('training-phone-mask'), {
+    mask: '+{7}(000)000-00-00'
   });
 
 })();
