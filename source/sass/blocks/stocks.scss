@@ -1,14 +1,14 @@
 .stocks {
-  min-height: 801px;
+  min-height: 794px;
   padding-top: 115px;
 
   @media (max-width: $tablet-width) {
-    min-height: 985px;
+    min-height: 978px;
     padding-top: 93px;
   }
 
   @media (max-width: $mobile-width) {
-    min-height: 1294px;
+    min-height: 1290px;
     padding-top: 67px;
   }
 }
