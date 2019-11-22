@@ -7,11 +7,13 @@
   @media (max-width: $tablet-width) {
     min-height: 758px;
     padding-top: 96px;
+    padding-bottom: 98px;
   }
 
   @media (max-width: $mobile-width) {
     min-height: 1231px;
     padding-top: 67px;
+    padding-bottom: 0;
   }
 }
 
@@ -33,6 +35,8 @@
   @media (max-width: $mobile-width) {
     font-size: 32px;
     line-height: 32px;
+    padding-bottom: 0;
+    margin-bottom: 52px;
   }
 }
 
@@ -46,8 +50,8 @@
   padding: 0 15px;
 
   @media (max-width: $tablet-width) {
-    min-height: auto;
-    max-height: auto;
+    min-height: 100%;
+    max-height: 100%;
     padding: 0 10px;
   }
 

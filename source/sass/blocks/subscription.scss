@@ -68,21 +68,19 @@
 .subscription__months {
   list-style: none;
   display: flex;
-  max-width: 338px;
-  justify-content: space-between;
+  width: max-content;
+  justify-content: center;
   margin: 0 auto;
-  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
   margin-top: 39px;
-  padding-bottom: 13px;
 
   @media (max-width: $tablet-width) {
     margin-top: 31px;
-    padding-bottom: 13px;
   }
 
   @media (max-width: $mobile-width) {
     margin-top: 21px;
-    padding-bottom: 13px;
+    flex-wrap: wrap;
+    width: auto;
   }
 }
 
@@ -94,23 +92,30 @@
   line-height: 150%;
   /* or 30px */
   color: rgba(16, 38, 84, 0.5);
+  padding-right: 46px;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+  padding-bottom: 13px;
 
   @media (max-width: $tablet-width) {
     font-size: 18px;
     line-height: 150%;
     /* or 27px */
+    padding-right: 54px;
   }
 
   @media (max-width: $mobile-width) {
     font-size: 16px;
     line-height: 150%;
     /* or 24px */
+    padding-right: 45px;
+  }
+
+  &:last-child {
+    padding-right: 0;
   }
 }
 
-.subscription__item_one-month,
-.subscription__item_six-months,
-.subscription__item_twelve-months {
+.subscription__months_item button {
   &:hover {
     opacity: 0.5;
   }
