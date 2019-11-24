@@ -16,14 +16,25 @@
   }
 }
 
+.contacts__training_form-wrapper {
+  min-width: 410px;
+  width: 410px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    min-width: auto;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 .contacts__training {
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
   background-color: #102654;
-  padding-left: 103px;
   min-height: 337px;
-  padding-right: 10px;
 
   @media (max-width: $tablet-width) {
     flex-basis: auto;
@@ -48,18 +59,28 @@
   color: #ffffff;
   padding-top: 58px;
   padding-bottom: 35px;
+  margin-left: -34px;
 
   @media (max-width: $tablet-width) {
     font-size: 42px;
     line-height: 42px;
     padding-top: 66px;
     padding-bottom: 38px;
+    margin-left: 0;
   }
 
   @media (max-width: $mobile-width) {
     font-size: 32px;
     line-height: 32px;
     padding-top: 67px;
+  }
+}
+
+.contacts__training_form {
+  margin-left: -34px;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 0;
   }
 }
 
@@ -157,7 +178,7 @@
   @media (max-width: $tablet-width) {
     min-width: 472px;
     width: 100%;
-    margin-top: 31px;
+    margin-top: 30px;
   }
 
   @media (max-width: $mobile-width) {
@@ -170,11 +191,24 @@
   }
 }
 
+.contacts__info_form-wrapper {
+  min-width: 404px;
+  width: 404px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: $tablet-width) {
+    min-width: auto;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 .contacts__info {
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
-  padding-left: 121px;
   min-height: 337px;
 
   @media (max-width: $tablet-width) {
@@ -199,12 +233,14 @@
   color: #102654;
   padding-top: 66px;
   padding-bottom: 43px;
+  margin-left: -20px;
 
   @media (max-width: $tablet-width) {
     font-size: 42px;
     line-height: 42px;
     padding-top: 66px;
     padding-bottom: 36px;
+    margin-left: 0;
   }
 
   @media (max-width: $mobile-width) {
@@ -263,10 +299,12 @@
   justify-content: space-between;
   max-width: 415px;
   padding-right: 15px;
+  margin-left: -20px;
 
   @media (max-width: $tablet-width) {
     max-width: 100%;
     padding-right: 10px;
+    margin-left: 0;
   }
 
   @media (max-width: $mobile-width) {

@@ -1,13 +1,14 @@
 .gym {
   position: relative;
   display: flex;
-  max-width: 1366px;
+  max-width: 1180px;
   min-height: 756px;
-  padding-top: 115px;
+  padding-top: 120px;
   padding-bottom: 235px;
   margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
+  justify-content: space-between;
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
@@ -28,16 +29,18 @@
 .gym__info {
   position: relative;
   padding-top: 45px;
-  padding-right: 85px;
+  max-width: 363px;
   margin-left: auto;
-  padding-left: 54px;
+  margin-right: 77px;
 
   @media (max-width: $tablet-width) {
-    margin-left: 0;
     text-align: center;
     padding-left: 80px;
     padding-right: 80px;
     padding-top: 0;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   @media (max-width: $mobile-width) {
@@ -74,6 +77,7 @@
   /* or 27px */
   color: #102654;
   padding-top: 10px;
+  letter-spacing: 0.019em;
 
   @media (max-width: $tablet-width) {
     padding-top: 11px;
@@ -94,52 +98,59 @@
   line-height: 150%;
   /* or 24px */
   color: #102654;
-  padding-top: 40px;
+  padding-top: 38px;
+  letter-spacing: 0.008em;
+  padding-bottom: 10px;
   width: 355px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 34px;
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 23px;
+    padding-right: 25px;
+  }
+}
+
+.gym__info_description_crossfit {
+  font-family: $textRoboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+  color: #102654;
+  letter-spacing: 0.008em;
 
   @media (max-width: $tablet-width) {
     display: none;
   }
 }
 
-.gym__info_description_mod {
-  display: none;
-
-  @media (max-width: $tablet-width) {
-    display: block;
-    font-family: $textRoboto;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 150%;
-    /* or 24px */
-    color: #102654;
-    padding-top: 34px;
-  }
-
-  @media (max-width: $mobile-width) {
-    padding-top: 23px;
-    padding-right: 20px;
-  }
-}
-
 .gym__image {
   max-width: 660px;
-  min-width: 500px;
+  min-width: 532px;
   min-height: 401px;
   max-height: 401px;
-  margin-right: auto;
   z-index: -10;
 
   @media (max-width: $tablet-width) {
-    margin-right: 0;
-    max-width: 100%;
-    min-width: 100%;
+    max-width: 678px;
+    min-width: 678px;
+    width: 678px;
     max-height: 345px;
     margin-top: 42px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (max-width: $mobile-width) {
+    max-width: 320px;
+    min-width: 320px;
+    width: 320px;
     max-height: 313px;
     min-height: 313px;
     height: 313px;
@@ -163,8 +174,8 @@
 .gym__video {
   position: absolute;
   background-color: rgba(20, 54, 122, 0.5);
-  bottom: 125px;
-  left: 39.5%;
+  bottom: 121px;
+  left: 37.8%;
   height: 228px;
 
   @media (max-width: $tablet-width) {

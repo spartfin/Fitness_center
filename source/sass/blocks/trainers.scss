@@ -3,11 +3,12 @@
   margin: 0 auto;
   padding-right: 60px;
   padding-left: 60px;
+  padding-bottom: 120px;
 
   @media (max-width: $tablet-width) {
     padding-right: 101px;
     padding-left: 101px;
-    padding-bottom: 93px;
+    padding-bottom: 99px;
   }
 
   @media (max-width: $mobile-width) {
@@ -35,7 +36,7 @@
     font-size: 42px;
     line-height: 42px;
     text-align: center;
-    margin-bottom: 45px;
+    margin-bottom: 44px;
   }
 
   @media (max-width: $mobile-width) {
@@ -46,29 +47,34 @@
 
 .trainers__wrapper {
   position: relative;
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .trainers__list {
   position: relative;
   list-style: none;
   display: flex;
+  justify-content: space-between;
   max-width: 1160px;
-  margin-bottom: 115px;
   margin-left: auto;
   margin-right: auto;
 
   @media (max-width: $tablet-width) {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    width: 566px;
     margin-bottom: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 226px;
   }
 }
 
 .trainers__click_left {
   position: absolute;
   left: -56px;
-  top: calc(50% - 19px);
+  top: calc(50% - 16px);
   cursor: pointer;
 
   @media (max-width: $mobile-width) {
@@ -84,7 +90,7 @@
 .trainers__click_right {
   position: absolute;
   right: -56px;
-  top: calc(50% - 19px);
+  top: calc(50% - 16px);
   cursor: pointer;
 
   @media (max-width: $mobile-width) {
@@ -107,15 +113,21 @@
 
 .trainers__list_card {
   position: relative;
-  min-height: 300px;
-  margin-right: 40px;
+  max-width: 260px;
+  min-width: 220px;
+  min-height: 294px;
+  margin-right: 5px;
 
   @media (max-width: $tablet-width) {
     margin-right: 30px;
+    max-width: 268px;
+    min-width: 268px;
     width: 100%;
   }
 
   @media (max-width: $mobile-width) {
+    max-width: 226px;
+    min-width: 226px;
     min-height: 274px;
     margin-right: 0;
   }
@@ -141,6 +153,10 @@
       @media (max-width: $mobile-width) {
         height: 274px;
       }
+    }
+
+    .trainers__list_card-name {
+      visibility: hidden;
     }
   }
 }
@@ -195,6 +211,15 @@
   color: #ffffff;
   margin-top: -57px;
   text-align: center;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 7px;
+    letter-spacing: 0.025em;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 0;
+  }
 }
 
 .trainers__list_portfolio-name {

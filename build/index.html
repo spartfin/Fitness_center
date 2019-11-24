@@ -46,11 +46,11 @@
         <p class="gym__info_size">Просторный зал площадью 900 кв/м</p>
         <p class="gym__info_description">Supergym – самый большой фитнес центр за Уралом и идеальное место для
           укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех
-          спортсменов. В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес
-          центре есть несколько оборудованных залов для различных видов групповых занятий</p>
-        <p class="gym__info_description_mod">Supergym – самый большой фитнес центр за Уралом и идеальное место для
-          укрепления тела и здоровья. Тренажерный
-          зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+          спортсменов.</p>
+        <p class="gym__info_description_crossfit">В зале расположены отдельная зона для Crossfit и кардио-зона с 40
+          тренажерами.
+          Также в фитнес центре есть
+          несколько оборудованных залов для различных видов групповых занятий</p>
       </div>
       <div class="gym__image">
         <picture>
@@ -194,7 +194,10 @@
             </div>
           </li>
           <li class="trainers__list_card trainers__list_card-maria">
-            <img src="img/trainer-maria.jpg" width="260" height="294" alt="Тренер Мария Кетова">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="img/trainer-maria-middle.jpg">
+              <img src="img/trainer-maria.jpg" width="260" height="294" alt="Тренер Мария Кетова">
+            </picture>
             <h3 class="trainers__list_card-name">Мария Кетова</h3>
             <div class="trainers__list_portfolio">
               <h3 class="trainers__list_portfolio-name">Мария Кетова</h3>
@@ -224,7 +227,7 @@
             </div>
             <div class="card__description">
               <h3>Площадь</h3>
-              <p>Занимайтесь без очередей и толпучки</p>
+              <p>Занимайтесь без очередей и&nbsp;толпучки</p>
             </div>
           </li>
           <li class="advantages__list_card card">
@@ -349,42 +352,46 @@
 
     <section class="contacts">
       <div class="contacts__training">
-        <h2 class="contacts__training_title">Бесплатное занятие</h2>
-        <form class="contacts__training_form" action="#" method="post">
-          <div class="contacts__training_wrapper">
-            <p class="contacts__training_form-item">
-              <input aria-label="Имя" type="text" name="login" placeholder="Имя" required="">
-            </p>
-            <p class="contacts__training_form-item">
-              <input aria-label="Телефон" type="tel" id="training-phone-mask" name="phone" placeholder="Телефон" required="">
-            </p>
-          </div>
-          <button class="contacts__training_button" type="submit">Отправить</button>
-        </form>
+        <div class="contacts__training_form-wrapper">
+          <h2 class="contacts__training_title">Бесплатное занятие</h2>
+          <form class="contacts__training_form" action="#" method="post">
+            <div class="contacts__training_wrapper">
+              <p class="contacts__training_form-item">
+                <input aria-label="Имя" type="text" name="login" placeholder="Имя" required="">
+              </p>
+              <p class="contacts__training_form-item">
+                <input aria-label="Телефон" type="tel" id="training-phone-mask" name="phone" placeholder="Телефон" required="">
+              </p>
+            </div>
+            <button class="contacts__training_button" type="submit">Отправить</button>
+          </form>
+        </div>
       </div>
       <div class="contacts__info">
-        <h2 class="contacts__info_title">Контакты</h2>
-        <div class="contacts__info_wrapper">
-          <ul class="contacts__info_schedule-address">
-            <li>
-              <h3>Адрес:</h3>
-              <p>г. Омск, ул. 60 лет Октября, 7</p>
-            </li>
-            <li>
-              <h3>График работы:</h3>
-              <p>Пн-Вс: с 8:00 до 22:00</p>
-            </li>
-          </ul>
-          <ul class="contacts__info_communication">
-            <li>
-              <h3>Телефон:</h3>
-              <a href="tel:8(800)5555555">8-800-555-55-55</a>
-            </li>
-            <li>
-              <h3>Email:</h3>
-              <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
-            </li>
-          </ul>
+        <div class="contacts__info_form-wrapper">
+          <h2 class="contacts__info_title">Контакты</h2>
+          <div class="contacts__info_wrapper">
+            <ul class="contacts__info_schedule-address">
+              <li>
+                <h3>Адрес:</h3>
+                <p>г. Омск, ул. 60 лет Октября, 7</p>
+              </li>
+              <li>
+                <h3>График работы:</h3>
+                <p>Пн-Вс: с 8:00 до 22:00</p>
+              </li>
+            </ul>
+            <ul class="contacts__info_communication">
+              <li>
+                <h3>Телефон:</h3>
+                <a href="tel:8(800)5555555">8-800-555-55-55</a>
+              </li>
+              <li>
+                <h3>Email:</h3>
+                <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>

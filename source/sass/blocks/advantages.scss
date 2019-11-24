@@ -1,7 +1,7 @@
 .advantages {
   min-height: 664px;
   background: #f8f9fc;
-  padding-top: 117px;
+  padding-top: 118px;
   padding-bottom: 120px;
 
   @media (max-width: $tablet-width) {
@@ -81,7 +81,7 @@
 }
 
 .advantages__list_bottom {
-  margin-top: -78px;
+  margin-top: -76px;
   padding-left: 21px;
 
   @media (max-width: $tablet-width) {
@@ -140,8 +140,10 @@
 .card__figures_quantity-900,
 .card__figures_quantity-350 {
   min-width: 108px;
+  margin-bottom: -2px;
 
   @media (max-width: $tablet-width) {
+    margin-bottom: 2px;
     min-width: 89px;
     max-width: 89px;
     max-height: 40px;
@@ -149,10 +151,18 @@
   }
 }
 
+.card__figures_quantity-350 {
+  @media (max-width: $mobile-width) {
+    margin-bottom: -3px;
+  }
+}
+
 .card__figures_quantity-70 {
   min-width: 72px;
+  margin-bottom: -3px;
 
   @media (max-width: $tablet-width) {
+    margin-bottom: 3px;
     min-width: 59px;
     max-width: 59px;
     max-height: 40px;
@@ -162,12 +172,18 @@
 
 .card__figures_quantity-5 {
   min-width: 70px;
+  margin-bottom: -3px;
 
   @media (max-width: $tablet-width) {
     min-width: 57px;
     max-width: 57px;
     max-height: 40px;
     min-height: 40px;
+    margin: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 3px;
   }
 }
 
@@ -190,6 +206,7 @@
   /* or 33px */
   color: #102654;
   padding-bottom: 4px;
+  margin-top: -3px;
 
   @media (max-width: $tablet-width) {
     font-size: 20px;
@@ -200,7 +217,7 @@
 
   @media (max-width: $mobile-width) {
     margin: 0;
-    padding-top: 7px;
+    padding-top: 6px;
   }
 }
 
@@ -222,10 +239,12 @@
   line-height: 140%;
   /* or 22px */
   color: #102654;
+  width: 226px;
 
   @media (max-width: $tablet-width) {
     margin-top: -3px;
     padding-right: 45px;
+    width: auto;
   }
 
   @media (max-width: $mobile-width) {
@@ -243,7 +262,7 @@
   padding-left: 34px;
   padding-right: 34px;
   margin: 0 auto;
-  margin-top: -81px;
+  margin-top: -76px;
 
   @media (max-width: $tablet-width) {
     width: auto;
