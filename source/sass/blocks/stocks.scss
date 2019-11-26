@@ -288,23 +288,29 @@
   padding-top: 16px;
   padding-bottom: 70px;
 
+  @media (max-width: $tablet-width) {
+    padding-top: 14px;
+    padding-bottom: 65px;
+  }
+
   @media (max-width: $mobile-width) {
     padding-right: 60px;
     padding-left: 60px;
-    padding-bottom: 27px;
+    padding-top: 16px;
+    padding-bottom: 22px;
   }
 }
 
 .stocks__list_card-condition_mod {
   @media (max-width: $tablet-width) {
     padding-right: 110px;
-    padding-bottom: 48px;
+    padding-bottom: 44px;
   }
 
   @media (max-width: $mobile-width) {
     padding-right: 50px;
     padding-left: 50px;
-    padding-bottom: 27px;
+    padding-bottom: 22px;
   }
 }
 
