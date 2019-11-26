@@ -179,12 +179,14 @@
   @media (max-width: $tablet-width) {
     min-width: 472px;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 29px;
+    min-height: 53px;
   }
 
   @media (max-width: $mobile-width) {
     min-width: 100%;
     margin-top: 39px;
+    min-height: 53px;
   }
 
   &:hover {
