@@ -82,19 +82,21 @@
   max-height: 462px;
 
   @media (max-width: $tablet-width) {
-    width: 100%;
-    flex-basis: 41%;
-    padding-right: 30px;
+    width: 279px;
     height: 462px;
+    flex-basis: auto;
+    padding-right: 30px;
     max-height: 100%;
+    margin-left: auto;
   }
 
   @media (max-width: $mobile-width) {
-    flex-basis: auto;
     padding-left: 0;
     padding-right: 0;
     text-align: center;
+    width: 290px;
     height: 299px;
+    margin: 0 auto;
   }
 }
 
@@ -167,15 +169,18 @@
   max-height: 462px;
 
   @media (max-width: $tablet-width) {
-    width: 100%;
-    flex-basis: 59%;
+    width: 399px;
     height: 462px;
+    flex-basis: auto;
     max-height: 100%;
+    margin-right: auto;
   }
 
   @media (max-width: $mobile-width) {
-    flex-basis: auto;
     max-height: 299px;
+    width: 290px;
+    height: 299px;
+    margin: 0 auto;
   }
 }
 
