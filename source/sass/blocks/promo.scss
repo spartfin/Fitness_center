@@ -36,7 +36,9 @@
     padding-left: 45px;
     padding-right: 46px;
     padding-top: 46px;
-    width: 50%;
+    width: 292px;
+    height: 292px;
+    margin-left: auto;
   }
 
   @media (max-width: $mobile-width) {
@@ -44,7 +46,9 @@
     padding-right: 44px;
     padding-top: 47px;
     padding-bottom: 51px;
-    width: auto;
+    width: 290px;
+    height: 292px;
+    margin: 0 auto;
   }
 }
 
@@ -252,14 +256,14 @@
   flex-grow: 1;
 
   @media (max-width: $tablet-width) {
+    max-width: 386px;
     height: 292px;
-    max-width: 100%;
-    width: 70%;
+    margin-right: auto;
   }
 
   @media (max-width: $mobile-width) {
-    max-width: 350px;
     min-width: 290px;
+    max-width: 290px;
     margin: 0 auto;
   }
 }
