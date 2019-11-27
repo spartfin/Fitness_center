@@ -1,4 +1,3 @@
-/* eslint-disable new-cap */
 'use strict';
 
 (function () {
@@ -23,6 +22,7 @@
 
   var activeBtn = function () {
     for (var i = 0; i < subscriptionBtn.length; i++) {
+      // eslint-disable-next-line no-shadow
       var activeButton = function (i) {
         subscriptionBtn[i].addEventListener('click', function () {
           prev = active;
@@ -40,7 +40,6 @@
     subscriptionBtn[active].classList.add('subscription__btn_active');
   };
 
-  // eslint-disable-next-line no-undef
   IMask(document.getElementById('training-phone-mask'), {
     mask: '+{7}(000)000-00-00'
   });
