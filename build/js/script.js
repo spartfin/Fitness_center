@@ -17,30 +17,28 @@
   };
   headerInfoBuyClick();
 
-  var itemOneMonth = document.querySelector('.subscription__item_one-month');
-  var itemSixMonths = document.querySelector('.subscription__item_six-months');
-  var itemTwelveMonths = document.querySelector('.subscription__item_twelve-months');
+  var active = 0;
+  var prev = 0;
+  var subscriptionBtn = document.getElementsByClassName('subscription__btn');
 
-  itemOneMonth.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    itemSixMonths.classList.remove('subscription__months_item_active');
-    itemTwelveMonths.classList.remove('subscription__months_item_active');
-    itemOneMonth.classList.add('subscription__months_item_active');
-  });
+  var activeBtn = function () {
+    for (var i = 0; i < subscriptionBtn.length; i++) {
+      var activeButton = function (i) {
+        subscriptionBtn[i].addEventListener('click', function () {
+          prev = active;
+          active = i;
+          changeActiveBtn();
+        });
+      };
+      activeButton(i);
+    }
+  };
+  activeBtn();
 
-  itemSixMonths.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    itemOneMonth.classList.remove('subscription__months_item_active');
-    itemTwelveMonths.classList.remove('subscription__months_item_active');
-    itemSixMonths.classList.add('subscription__months_item_active');
-  });
-
-  itemTwelveMonths.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    itemSixMonths.classList.remove('subscription__months_item_active');
-    itemOneMonth.classList.remove('subscription__months_item_active');
-    itemTwelveMonths.classList.add('subscription__months_item_active');
-  });
+  var changeActiveBtn = function () {
+    subscriptionBtn[prev].classList.remove('subscription__btn_active');
+    subscriptionBtn[active].classList.add('subscription__btn_active');
+  };
 
   // eslint-disable-next-line no-undef
   IMask(document.getElementById('training-phone-mask'), {
