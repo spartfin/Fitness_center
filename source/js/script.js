@@ -1,3 +1,4 @@
+/* eslint-disable new-cap */
 'use strict';
 
 (function () {
@@ -40,6 +41,7 @@
     subscriptionBtn[active].classList.add('subscription__btn_active');
   };
 
+  // eslint-disable-next-line no-undef
   IMask(document.getElementById('training-phone-mask'), {
     mask: '+{7}(000)000-00-00'
   });
