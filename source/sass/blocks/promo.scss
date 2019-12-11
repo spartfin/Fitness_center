@@ -5,58 +5,90 @@
   max-width: 1190px;
   padding-right: 15px;
   padding-left: 15px;
-  margin-bottom: 114px;
-  margin-top: 120px;
+  padding-bottom: 114px;
+  padding-top: 120px;
 
   @media (max-width: $tablet-width) {
     min-height: 292px;
     max-width: 100%;
     padding-right: 45px;
     padding-left: 45px;
-    margin-bottom: 96px;
-    margin-top: 102px;
+    padding-bottom: 96px;
+    padding-top: 102px;
   }
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
     padding-right: 15px;
     padding-left: 15px;
-    margin-bottom: 70px;
-    margin-top: 69px;
+    padding-bottom: 70px;
+    padding-top: 69px;
   }
 }
 
 .promo__event {
   background-color: #ed0233;
+  background-image: url("../img/trained-man.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
   padding-left: 78px;
   padding-right: 83px;
   padding-top: 77px;
+  height: 500px;
+  width: 100%;
 
   @media (max-width: $tablet-width) {
+    background-image: url("../img/trained-man-midlle.png");
+    width: 678px;
     padding-left: 45px;
     padding-right: 46px;
     padding-top: 46px;
-    width: 292px;
     height: 292px;
-    margin-left: auto;
+    margin: 0 auto;
   }
 
   @media (max-width: $mobile-width) {
+    background-image: url("../img/trained-man-small.png");
+    background-position-y: bottom;
     padding-left: 44px;
     padding-right: 44px;
     padding-top: 47px;
     padding-bottom: 51px;
     width: 290px;
-    height: 292px;
+    height: 584px;
     margin: 0 auto;
+  }
+}
+
+.promo__event p {
+  font-family: $textRoboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+  color: #ffffff;
+  letter-spacing: 0.02em;
+  margin-bottom: 47px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 12px;
+    line-height: 150%;
+    /* or 18px */
+    margin-bottom: 30px;
   }
 }
 
 .promo__event_wrapper {
   display: flex;
+  margin-bottom: 10px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 3px;
+  }
 }
 
-.promo__event_title {
+.promo__event_wrapper h2 {
   font-family: $textBebas;
   font-size: 90px;
   line-height: 89px;
@@ -82,7 +114,7 @@
   display: flex;
 }
 
-.promo__event_date p {
+.promo__event_date span {
   font-family: $textRoboto;
   font-style: normal;
   font-weight: normal;
@@ -101,7 +133,7 @@
   }
 }
 
-.promo__event_date-number p {
+.promo__event_date-number span {
   font-family: $textRoboto;
   font-style: normal;
   font-weight: bold;
@@ -124,7 +156,7 @@
   }
 }
 
-.promo__event_date-month p {
+.promo__event_date-month span {
   font-family: $textRoboto;
   font-style: normal;
   font-weight: normal;
@@ -149,7 +181,7 @@
   }
 }
 
-.promo__event_time p {
+.promo__event_time span {
   font-family: $textRoboto;
   font-style: normal;
   font-weight: normal;
@@ -170,7 +202,7 @@
   }
 }
 
-.promo__event_time-number p {
+.promo__event_time-number span {
   font-family: $textRoboto;
   font-style: normal;
   font-weight: bold;
@@ -190,33 +222,14 @@
   }
 }
 
-.promo__description {
-  font-family: $textRoboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 150%;
-  /* or 27px */
-  color: #ffffff;
-  letter-spacing: 0.02em;
-  padding-top: 10px;
-
-  @media (max-width: $tablet-width) {
-    font-size: 12px;
-    line-height: 150%;
-    /* or 18px */
-    padding-top: 3px;
-  }
-}
-
 .promo__request {
   position: relative;
   display: flex;
+  max-width: 343px;
   width: 100%;
   min-width: 343px;
   justify-content: center;
   text-align: center;
-  margin: 0 auto;
   font-family: $textRoboto;
   font-style: normal;
   font-weight: bold;
@@ -231,7 +244,6 @@
   padding-bottom: 24px;
   padding-left: 5px;
   padding-right: 5px;
-  margin-top: 47px;
   z-index: 10;
 
   &:hover {
@@ -241,35 +253,10 @@
   @media (max-width: $tablet-width) {
     font-size: 10px;
     min-width: 202px;
+    max-width: 202px;
     line-height: 12px;
     border: 2px solid #ffffff;
     padding-top: 12px;
     padding-bottom: 12px;
-    margin-top: 30px;
   }
-}
-
-.promo__image {
-  height: 500px;
-  max-width: 660px;
-  width: auto;
-  flex-grow: 1;
-
-  @media (max-width: $tablet-width) {
-    max-width: 386px;
-    height: 292px;
-    margin-right: auto;
-  }
-
-  @media (max-width: $mobile-width) {
-    min-width: 290px;
-    max-width: 290px;
-    width: 290px;
-    margin: 0 auto;
-  }
-}
-
-.promo__image img {
-  width: 100%;
-  height: 100%;
 }

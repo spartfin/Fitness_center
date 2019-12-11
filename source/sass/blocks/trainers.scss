@@ -3,23 +3,23 @@
   margin: 0 auto;
   padding-right: 60px;
   padding-left: 60px;
-  padding-bottom: 120px;
+  padding-bottom: 114px;
 
   @media (max-width: $tablet-width) {
     padding-right: 101px;
     padding-left: 101px;
-    padding-bottom: 99px;
+    padding-bottom: 92px;
   }
 
   @media (max-width: $mobile-width) {
     padding-right: 47px;
     padding-left: 47px;
     margin-top: -2px;
-    padding-bottom: 70px;
+    padding-bottom: 64px;
   }
 }
 
-.trainers__title {
+.trainers h2 {
   font-family: $textBebasCyrillic;
   max-width: 1160px;
   width: 100%;
@@ -112,6 +112,32 @@
   }
 }
 
+.trainers__list_card h3 {
+  width: 260px;
+  height: 27px;
+  position: absolute;
+  font-family: $textRoboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+  color: #ffffff;
+  bottom: 28px;
+  text-align: center;
+
+  @media (max-width: $tablet-width) {
+    width: 268px;
+    padding-left: 7px;
+    letter-spacing: 0.025em;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 226px;
+    padding-left: 0;
+  }
+}
+
 .trainers__list_card {
   position: relative;
   max-width: 260px;
@@ -150,14 +176,21 @@
       color: #b6bdcc;
       background-color: rgba(16, 38, 84, 0.89);
       margin: 0 auto;
+      padding-top: 76px;
 
       @media (max-width: $mobile-width) {
+        padding-top: 65px;
         height: 274px;
       }
     }
 
-    .trainers__list_card-name {
-      visibility: hidden;
+    h3 {
+      bottom: 221px;
+      z-index: 20;
+
+      @media (max-width: $mobile-width) {
+        bottom: 210px;
+      }
     }
   }
 }
@@ -202,43 +235,6 @@
   }
 }
 
-.trainers__list_card-name {
-  font-family: $textRoboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 150%;
-  /* or 27px */
-  color: #ffffff;
-  margin-top: -57px;
-  text-align: center;
-
-  @media (max-width: $tablet-width) {
-    padding-left: 7px;
-    letter-spacing: 0.025em;
-  }
-
-  @media (max-width: $mobile-width) {
-    padding-left: 0;
-  }
-}
-
-.trainers__list_portfolio-name {
-  font-family: $textRoboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 150%;
-  /* or 27px */
-  color: #ffffff;
-  padding-top: 52px;
-  margin-bottom: -4px;
-
-  @media (max-width: $mobile-width) {
-    padding-top: 41px;
-  }
-}
-
 .trainers__list_portfolio-list {
   list-style: none;
   text-align: left;
@@ -252,7 +248,7 @@
 .trainers__list_portfolio-list li {
   position: relative;
   padding-left: 16px;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
   margin-left: 20px;
 
   @media (max-width: $mobile-width) {
@@ -263,7 +259,7 @@
     line-height: 150%;
     /* or 21px */
     color: #ffffff;
-    padding-bottom: 13px;
+    margin-bottom: 13px;
   }
 
   &::before {

@@ -46,7 +46,7 @@
   }
 }
 
-.subscription__title {
+.subscription h2 {
   font-family: $textBebasCyrillic;
   font-size: 49px;
   font-weight: 400;
@@ -54,15 +54,18 @@
   letter-spacing: 0.03em;
   color: #102654;
   text-align: center;
+  padding-bottom: 35px;
 
   @media (max-width: $tablet-width) {
     font-size: 42px;
     line-height: 42px;
+    padding-bottom: 33px;
   }
 
   @media (max-width: $mobile-width) {
     font-size: 32px;
     line-height: 32px;
+    padding-bottom: 24px;
   }
 }
 
@@ -72,14 +75,14 @@
   width: max-content;
   justify-content: center;
   margin: 0 auto;
-  margin-top: 35px;
+  padding-bottom: 39px;
 
   @media (max-width: $tablet-width) {
-    margin-top: 33px;
+    padding-bottom: 43px;
   }
 
   @media (max-width: $mobile-width) {
-    margin-top: 24px;
+    padding-bottom: 35px;
     flex-wrap: wrap;
     width: auto;
   }
@@ -148,20 +151,17 @@
   flex-wrap: wrap;
   padding-left: 10px;
   padding-right: 10px;
-  margin-top: 39px;
   z-index: 5;
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
     padding-left: 163px;
     padding-right: 163px;
-    margin-top: 43px;
   }
 
   @media (max-width: $mobile-width) {
     padding-left: 0;
     padding-right: 0;
-    margin-top: 35px;
   }
 }
 
@@ -173,16 +173,19 @@
   flex-basis: 1;
   width: calc(33.33% - 40px);
   margin-bottom: 20px;
+  padding-top: 59px;
 
   @media (max-width: $tablet-width) {
     width: 100%;
     max-width: 100%;
     margin-bottom: 40px;
+    padding-top: 63px;
   }
 
   @media (max-width: $mobile-width) {
     margin-bottom: 35px;
     min-height: 384px;
+    padding-top: 50px;
   }
 
   &:nth-child(3n + 2) {
@@ -217,7 +220,7 @@
   }
 }
 
-.subscription__cards_item-title {
+.subscription__cards_item h3 {
   font-family: $textRoboto;
   font-style: normal;
   font-weight: bold;
@@ -225,21 +228,16 @@
   line-height: 29px;
   color: #102654;
   text-align: center;
-  margin-top: 59px;
-
-  @media (max-width: $tablet-width) {
-    margin-top: 63px;
-  }
+  margin-bottom: 11px;
 
   @media (max-width: $mobile-width) {
     font-size: 22px;
     line-height: 110.16%;
     /* or 24px */
-    margin-top: 50px;
   }
 }
 
-.subscription__cards_item-service {
+.subscription__cards_item span:nth-child(2) {
   font-family: $textRoboto;
   font-style: normal;
   font-weight: normal;
@@ -248,10 +246,9 @@
   /* or 24px */
   color: #495a7d;
   text-align: center;
-  margin-top: 11px;
 }
 
-.subscription__cards_item-cost {
+.subscription__cards_item span:nth-child(3) {
   font-family: $textRoboto;
   font-style: normal;
   font-weight: bold;
@@ -270,7 +267,7 @@
   }
 }
 
-.subscription__cards_item-price {
+.subscription__cards_item span:nth-child(4){
   position: relative;
   width: 166px;
   font-family: $textRoboto;
@@ -282,6 +279,7 @@
   color: #103aae;
   margin: 0 auto;
   margin-top: -83px;
+  margin-bottom: 31px;
 
   &::after {
     position: absolute;
@@ -330,5 +328,4 @@
   padding-bottom: 24px;
   padding-left: 5px;
   padding-right: 5px;
-  margin-top: 31px;
 }

@@ -85,28 +85,39 @@
     margin: 0 auto;
     width: auto;
   }
+
+  @media (max-width: $mobile-width) {
+    margin: 0;
+    width: 100%;
+  }
 }
 
 .header__info {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding-right: 74px;
   padding-left: 10px;
   margin-right: -10px;
+  padding-top: 116px;
+  padding-left: 73px;
 
   @media (max-width: $tablet-width) {
     margin: 0;
     padding: 0;
     padding-left: 6px;
+    padding-top: 53px;
   }
 
   @media (max-width: $mobile-width) {
     padding-left: 0;
-    width: 100%;
+    padding-top: 55px;
+    margin: 0 auto;
+    min-width: 290px;
   }
 }
 
-.header__info_city {
+.header__info p:nth-child(1) {
   font-family: $textBebas;
   font-size: 49px;
   line-height: 49px;
@@ -114,23 +125,23 @@
   text-align: right;
   text-transform: uppercase;
   color: #ffffff;
-  margin-top: 116px;
+  margin-bottom: 5px;
 
   @media (max-width: $tablet-width) {
     font-size: 34px;
     line-height: 34px;
-    margin-top: 53px;
+    margin-bottom: 3px;
   }
 
   @media (max-width: $mobile-width) {
     font-size: 28px;
     line-height: 28px;
-    margin-top: 55px;
     margin-left: auto;
+    margin-bottom: 9px;
   }
 }
 
-.header__info_title {
+.header__info h1 {
   font-family: $textBebasCyrillic;
   font-size: 109px;
   font-weight: 600;
@@ -141,26 +152,27 @@
   color: #ffffff;
   width: 320px;
   margin-left: auto;
-  margin-top: 5px;
+  margin-bottom: 62px;
 
   @media (max-width: $tablet-width) {
     font-size: 86px;
     line-height: 86px;
     margin-left: 0;
-    margin-top: 3px;
+    margin-bottom: 44px;
   }
 
   @media (max-width: $mobile-width) {
     width: 213px;
     font-size: 78px;
     line-height: 78px;
-    margin-top: 9px;
     margin-left: auto;
     letter-spacing: 0.03em;
+    margin-bottom: 46px;
   }
 }
 
-.header__info_description {
+.header__info p:nth-child(3) {
+  position: absolute;
   font-family: $textRoboto;
   font-style: normal;
   font-weight: normal;
@@ -171,23 +183,21 @@
   color: #ffffff;
   width: 114px;
   height: 51px;
-  margin-right: 268px;
-  margin-top: -83px;
+  top: 304px;
+  right: 340px;
 
   @media (max-width: $tablet-width) {
-    margin-right: 206px;
-    margin-left: -6px;
-    margin-top: -76px;
+    top: 185px;
+    right: 213px;
   }
 
   @media (max-width: $mobile-width) {
-    margin-right: 180px;
-    margin-top: -72px;
-    margin-left: auto;
+    top: 175px;
+    right: 179px;
   }
 }
 
-.header__info_buy {
+.header__info a {
   font-family: $textRoboto;
   font-style: normal;
   font-weight: bold;
@@ -205,7 +215,6 @@
   min-height: 57px;
   padding: 20px 5px;
   margin-left: auto;
-  margin-top: 94px;
 
   &:hover {
     opacity: 0.5;
@@ -213,14 +222,12 @@
 
   @media (max-width: $tablet-width) {
     width: 187px;
-    margin-top: 69px;
   }
 
   @media (max-width: $mobile-width) {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 67px;
   }
 }
 
@@ -228,12 +235,14 @@
   height: 556px;
   max-width: 500px;
   min-width: 500px;
+  background-image: url("../img/superman-image.jpg");
 
   @media (max-width: $tablet-width) {
     max-width: 324px;
     min-width: 324px;
     height: 390px;
     margin-left: 29px;
+    background-image: url("../img/superman-image-midlle.jpg");
   }
 
   @media (max-width: $mobile-width) {
@@ -249,9 +258,10 @@
 .header__social {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   margin-right: auto;
-  margin-top: 433px;
   margin-left: auto;
+  padding-bottom: 25px;
 
   @media (max-width: $tablet-width) {
     display: none;
