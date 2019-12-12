@@ -21,18 +21,18 @@
   letter-spacing: 0.03em;
   color: #102654;
   text-align: center;
-  margin-bottom: 54px;
+  padding-bottom: 54px;
 
   @media (max-width: $tablet-width) {
     font-size: 42px;
     line-height: 42px;
-    margin-bottom: 44px;
+    padding-bottom: 44px;
   }
 
   @media (max-width: $mobile-width) {
     font-size: 32px;
     line-height: 32px;
-    margin-bottom: 45px;
+    padding-bottom: 45px;
   }
 }
 
