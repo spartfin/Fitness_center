@@ -1,4 +1,5 @@
 .footer {
+  flex-shrink: 0;
   background: #030a1a;
 }
 
@@ -9,8 +10,9 @@
   min-height: 108px;
   padding-left: 103px;
   padding-right: 103px;
-  margin: 0 auto;
   padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0 auto;
 
   @media (max-width: $tablet-width) {
     min-height: 114px;

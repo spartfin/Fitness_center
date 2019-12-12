@@ -342,15 +342,15 @@
     <section class="contacts">
       <div class="contacts__training">
         <div class="contacts__training_form-wrapper">
-          <h2 class="contacts__training_title">Бесплатное занятие</h2>
+          <h2>Бесплатное занятие</h2>
           <form class="contacts__training_form" action="#" method="post">
             <div class="contacts__training_wrapper">
-              <p class="contacts__training_form-item">
+              <label class="contacts__training_form-item">
                 <input aria-label="Имя" type="text" name="login" placeholder="Имя" required="">
-              </p>
-              <p class="contacts__training_form-item">
+              </label>
+              <label class="contacts__training_form-item">
                 <input aria-label="Телефон" type="tel" id="training-phone-mask" name="phone" placeholder="Телефон" required="">
-              </p>
+              </label>
             </div>
             <button class="contacts__training_button" type="submit">Отправить</button>
           </form>
@@ -358,28 +358,26 @@
       </div>
       <div class="contacts__info">
         <div class="contacts__info_form-wrapper">
-          <h2 class="contacts__info_title">Контакты</h2>
+          <h2>Контакты</h2>
           <div class="contacts__info_wrapper">
-            <ul class="contacts__info_schedule-address">
-              <li>
+            <div class="contacts__item_wrap">
+              <div class="contacts__info_item">
                 <h3>Адрес:</h3>
                 <p>г. Омск, ул. 60 лет Октября, 7</p>
-              </li>
-              <li>
+              </div>
+              <div class="contacts__info_item">
                 <h3>График работы:</h3>
                 <p>Пн-Вс: с 8:00 до 22:00</p>
-              </li>
-            </ul>
-            <ul class="contacts__info_communication">
-              <li>
-                <h3>Телефон:</h3>
-                <a href="tel:8(800)5555555">8-800-555-55-55</a>
-              </li>
-              <li>
-                <h3>Email:</h3>
-                <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
-              </li>
-            </ul>
+              </div>
+            </div>
+            <div class="contacts__info_item">
+              <h3>Телефон:</h3>
+              <a href="tel:8(800)5555555">8-800-555-55-55</a>
+            </div>
+            <div class="contacts__info_item">
+              <h3>Email:</h3>
+              <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+            </div>
           </div>
         </div>
       </div>

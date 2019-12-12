@@ -1,14 +1,13 @@
 .reviews {
-  padding-bottom: 121px;
+  padding-bottom: 120px;
 
   @media (max-width: $tablet-width) {
     padding-bottom: 100px;
   }
 
   @media (max-width: $mobile-width) {
-    padding-bottom: 70px;
     padding: 0 47px;
-    margin-bottom: 70px;
+    padding-bottom: 70px;
     margin-top: 2px;
   }
 }
@@ -155,7 +154,7 @@
   }
 }
 
-.reviews h3{
+.reviews h3 {
   font-family: $textRoboto;
   font-style: normal;
   font-weight: bold;

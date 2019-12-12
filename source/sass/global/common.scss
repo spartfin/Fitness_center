@@ -13,11 +13,22 @@ body {
   margin: 0;
   padding: 0;
   min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: $textRoboto;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
   color: #102654;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.content {
+  flex: 1 0 auto;
 }
 
 .overlay {
