@@ -1,5 +1,5 @@
 .stocks {
-  min-height: 794px;
+  min-height: 796px;
   padding-top: 116px;
 
   @media (max-width: $tablet-width) {
@@ -13,7 +13,7 @@
   }
 }
 
-.stocks__title {
+.stocks h2 {
   font-family: $textBebasCyrillic;
   font-size: 49px;
   line-height: 49px;
@@ -21,18 +21,18 @@
   letter-spacing: 0.03em;
   color: #102654;
   text-align: center;
-  padding-bottom: 52px;
+  margin-bottom: 54px;
 
   @media (max-width: $tablet-width) {
     font-size: 42px;
     line-height: 42px;
-    padding-bottom: 44px;
+    margin-bottom: 44px;
   }
 
   @media (max-width: $mobile-width) {
     font-size: 32px;
     line-height: 32px;
-    padding-bottom: 45px;
+    margin-bottom: 45px;
   }
 }
 
@@ -53,15 +53,22 @@
   @media (max-width: $mobile-width) {
     padding-left: 15px;
     padding-right: 15px;
-    min-width: 100%;
+    min-width: 320px;
+    max-width: 320px;
+    margin: 0 auto;
   }
 }
 
 .stocks__subscription {
   display: flex;
   max-width: 560px;
+  max-height: 462px;
   margin-right: 40px;
   flex-basis: 50%;
+  background: #ed0233;
+  background-image: url("../img/trained-woman.jpg");
+  background-repeat: no-repeat;
+  background-position-x: right;
 
   @media (max-width: $tablet-width) {
     margin-right: auto;
@@ -69,43 +76,51 @@
     min-width: 678px;
     flex-basis: auto;
     margin-bottom: 30px;
+    background-image: url("../img/trained-woman-middle.jpg");
   }
 
   @media (max-width: $mobile-width) {
     min-height: 598px;
     flex-direction: column;
-    margin-bottom: 30px;
     min-width: 100%;
+    max-width: 100%;
+    width: 290px;
+    background-image: url("../img/trained-woman-small.jpg");
+    background-position-y: bottom;
   }
 }
 
 .stocks__subscription_info {
-  background: #ed0233;
+  display: flex;
+  flex-direction: column;
   padding-left: 45px;
   padding-right: 5px;
   flex-basis: 50%;
   max-height: 462px;
+  padding-bottom: 46px;
+  padding-top: 32px;
 
   @media (max-width: $tablet-width) {
     width: 279px;
     height: 462px;
     flex-basis: auto;
-    padding-right: 30px;
+    padding-right: 34px;
     max-height: 100%;
-    margin-left: auto;
+    padding-bottom: 46px;
   }
 
   @media (max-width: $mobile-width) {
     padding-left: 0;
     padding-right: 0;
     text-align: center;
+    align-items: center;
     width: 290px;
     height: 299px;
     margin: 0 auto;
   }
 }
 
-.stocks__subscription_info-title {
+.stocks__subscription_info h3 {
   font-family: $textRoboto;
   font-style: normal;
   font-weight: bold;
@@ -113,20 +128,24 @@
   line-height: 156%;
   /* or 44px */
   color: #ffffff;
-  padding-top: 32px;
+  margin-bottom: 8px;
 }
 
-.stocks__subscription_info-price {
+.stocks__subscription span {
   font-family: $textRoboto;
   font-style: normal;
   font-weight: bold;
   font-size: 70px;
   line-height: 47px;
   color: #ffffff;
-  padding-top: 8px;
+  margin-bottom: 31px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 25px;
+  }
 }
 
-.stocks__subscription_info-description {
+.stocks__subscription_info p {
   font-family: $textRoboto;
   font-style: normal;
   font-weight: normal;
@@ -134,9 +153,8 @@
   line-height: 140%;
   /* or 25px */
   color: #ffffff;
-  padding-top: 31px;
-  padding-bottom: 185px;
   padding-right: 48px;
+  margin-bottom: auto;
 
   @media (max-width: $tablet-width) {
     letter-spacing: 0.0155em;
@@ -145,14 +163,13 @@
 
   @media (max-width: $mobile-width) {
     letter-spacing: 0.0155em;
-    padding-top: 25px;
-    padding-bottom: 28px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 45px;
+    padding-right: 45px;
   }
 }
 
 .stocks__subscription_info-detail {
+  width: max-content;
   font-family: $textRoboto;
   min-width: 67px;
   font-style: normal;
@@ -166,39 +183,6 @@
 
   &:hover {
     opacity: 0.5;
-  }
-}
-
-.stocks__subscription_image {
-  flex-basis: 50%;
-  max-height: 462px;
-
-  @media (max-width: $tablet-width) {
-    width: 399px;
-    height: 462px;
-    flex-basis: auto;
-    max-height: 100%;
-    margin-right: auto;
-  }
-
-  @media (max-width: $mobile-width) {
-    max-height: 299px;
-    width: 290px;
-    height: 299px;
-    margin: 0 auto;
-  }
-}
-
-.stocks__subscription_image img {
-  height: 100%;
-
-  @media (max-width: $tablet-width) {
-    height: 462px;
-    width: 100%;
-  }
-
-  @media (max-width: $mobile-width) {
-    max-height: 299px;
   }
 }
 
@@ -230,11 +214,16 @@
 }
 
 .stocks__list_card {
+  display: flex;
+  flex-direction: column;
   min-height: 211px;
   background-image: url("../img/border-stocks.png");
   background-size: 100% 100%;
   padding-left: 35px;
+  padding-right: 65px;
   margin-bottom: 40px;
+  padding-top: 35px;
+  padding-bottom: 36px;
 
   @media (max-width: $tablet-width) {
     background-image: url("../img/border-stocks-middle.png");
@@ -248,8 +237,11 @@
   @media (max-width: $mobile-width) {
     background-image: url("../img/border-stocks-small.png");
     text-align: center;
-    padding-left: 0;
+    padding: 0 40px;
+    padding-top: 45px;
+    padding-bottom: 47px;
     margin-bottom: 30px;
+    margin-right: 0;
     width: 290px;
     max-width: 290px;
     min-width: 290px;
@@ -274,22 +266,26 @@
   }
 }
 
-.stocks__list_card-title {
+.stocks__list_card h3 {
   font-family: $textRoboto;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 18px;
   color: #1c3374;
-  padding-top: 35px;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 14px;
+  }
 
   @media (max-width: $mobile-width) {
-    padding-top: 44px;
+    margin-bottom: 16px;
   }
 }
 
-.stocks__list_card-condition {
+.stocks__list_card p {
   font-family: $textRoboto;
   font-style: normal;
   font-weight: normal;
@@ -298,33 +294,7 @@
   /* or 22px */
   color: #1c3374;
   letter-spacing: 0.015em;
-  padding-top: 16px;
-  padding-bottom: 65px;
-
-  @media (max-width: $tablet-width) {
-    padding-top: 14px;
-    padding-bottom: 65px;
-  }
-
-  @media (max-width: $mobile-width) {
-    padding-right: 60px;
-    padding-left: 60px;
-    padding-top: 16px;
-    padding-bottom: 22px;
-  }
-}
-
-.stocks__list_card-condition_mod {
-  @media (max-width: $tablet-width) {
-    padding-right: 110px;
-    padding-bottom: 44px;
-  }
-
-  @media (max-width: $mobile-width) {
-    padding-right: 50px;
-    padding-left: 50px;
-    padding-bottom: 22px;
-  }
+  margin-bottom: auto;
 }
 
 .stocks__list_info-detail {
