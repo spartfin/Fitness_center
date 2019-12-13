@@ -61,6 +61,7 @@
   max-width: 1160px;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
 
   @media (max-width: $tablet-width) {
     width: 566px;
@@ -144,6 +145,8 @@
   min-width: 220px;
   min-height: 294px;
   margin-right: 5px;
+  opacity: 0;
+
 
   @media (max-width: $tablet-width) {
     margin-right: 30px;
@@ -195,17 +198,8 @@
   }
 }
 
-.trainers__list_card-anna,
-.trainers__list_card-aleksey {
-  @media (max-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.trainers__list_card-maria {
-  @media (max-width: $mobile-width) {
-    display: none;
-  }
+.slide__Active {
+  opacity: 1;
 }
 
 .trainers__list_card img {
