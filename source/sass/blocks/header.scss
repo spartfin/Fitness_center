@@ -116,7 +116,7 @@
   }
 }
 
-.header__info p:nth-child(1) {
+.header__info span {
   font-family: $textBebas;
   font-size: 49px;
   line-height: 49px;
@@ -170,7 +170,7 @@
   }
 }
 
-.header__info p:nth-child(3) {
+.header__info p {
   position: absolute;
   font-family: $textRoboto;
   font-style: normal;

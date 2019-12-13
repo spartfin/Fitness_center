@@ -141,7 +141,7 @@
     min-width: 100%;
   }
 
-  &:nth-child(1) {
+  &:first-child {
     margin-right: 30px;
 
     @media (max-width: $tablet-width) {

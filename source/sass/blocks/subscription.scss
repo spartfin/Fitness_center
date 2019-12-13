@@ -237,7 +237,7 @@
   }
 }
 
-.subscription__cards_item span:nth-child(2) {
+.subscription__description {
   font-family: $textRoboto;
   font-style: normal;
   font-weight: normal;
@@ -248,7 +248,7 @@
   text-align: center;
 }
 
-.subscription__cards_item span:nth-child(3) {
+.subscription__coint {
   font-family: $textRoboto;
   font-style: normal;
   font-weight: bold;
@@ -267,7 +267,7 @@
   }
 }
 
-.subscription__cards_item span:nth-child(4) {
+.subscription__price {
   position: relative;
   width: 166px;
   font-family: $textRoboto;

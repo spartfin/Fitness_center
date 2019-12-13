@@ -71,7 +71,7 @@
   }
 }
 
-.gym__info p:nth-child(2) {
+.gym__info_size p {
   font-family: $textRoboto;
   font-style: normal;
   font-weight: normal;
@@ -93,7 +93,7 @@
   }
 }
 
-.gym__info p:nth-child(3) {
+.gym__info_description p {
   font-family: $textRoboto;
   font-style: normal;
   font-weight: 300;
@@ -117,7 +117,7 @@
   }
 }
 
-.gym__info p:nth-child(4) {
+.gym__info_description_crossfit p {
   font-family: $textRoboto;
   font-style: normal;
   font-weight: 300;

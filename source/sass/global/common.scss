@@ -72,3 +72,12 @@ button {
 span {
   display: block;
 }
+
+button:active,
+button:focus {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}

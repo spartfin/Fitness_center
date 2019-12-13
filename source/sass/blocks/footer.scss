@@ -142,24 +142,33 @@
     margin-right: auto;
     align-content: center;
     padding-left: 3px;
+    justify-content: start;
   }
 }
 
-.footer__social_item-button svg {
+.footer__social_item {
   @media (max-width: $mobile-width) {
-    &:nth-child(1) {
-      min-width: 32px;
-      min-height: 27px;
-    }
+    margin-right: 33px;
+  }
+}
 
-    &:nth-child(2) {
-      min-width: 27px;
-      min-height: 27px;
-    }
+.button_vkonakte svg {
+  @media (max-width: $mobile-width) {
+    min-width: 32px;
+    min-height: 27px;
+  }
+}
 
-    &:nth-child(3) {
-      min-width: 14px;
-      min-height: 27px;
-    }
+.button_insta svg {
+  @media (max-width: $mobile-width) {
+    min-width: 27px;
+    min-height: 27px;
+  }
+}
+
+.button_facebook svg {
+  @media (max-width: $mobile-width) {
+    min-width: 14px;
+    min-height: 27px;
   }
 }

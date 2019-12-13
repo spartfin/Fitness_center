@@ -166,7 +166,7 @@
   color: #ffffff;
   border: none;
 
-  &:nth-child(1) {
+  &:first-child {
     padding-top: 8px;
 
     @media (max-width: $tablet-width) {
