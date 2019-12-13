@@ -129,13 +129,13 @@
   }
 }
 
-.card__figures svg {
+.advantages__figures svg {
   @media (max-width: $tablet-width) {
     height: 40px;
   }
 }
 
-.card__figures {
+.advantages__figures {
   padding-top: 6px;
   padding-left: 6px;
   margin-right: 30px;
@@ -151,7 +151,7 @@
   }
 }
 
-.card__figures span {
+.advantages__figures span {
   position: relative;
   font-family: $textRoboto;
   font-style: normal;

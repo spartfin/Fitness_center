@@ -36,6 +36,7 @@
   line-height: 26px;
   letter-spacing: 0.02em;
   color: #ffffff;
+  margin-right: auto;
 
   @media (max-width: $tablet-width) {
     font-size: 24px;
@@ -43,29 +44,52 @@
   }
 
   @media (max-width: $mobile-width) {
-    display: none;
+    font-family: $textBebas;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-bottom: 20px;
+    margin-right: 0;
   }
 }
 
-.footer__navigation {
-  display: flex;
-  justify-content: space-between;
+.footer__navigation_one,
+.footer__navigation_two {
   list-style: none;
-  max-width: 431px;
+}
+
+.footer__navigation_one {
+  display: flex;
   width: 100%;
-  margin-right: -12px;
-  padding-top: 6px;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    margin-right: 80px;
+    width: auto;
+  }
+}
+
+.footer__navigation_two {
+  display: flex;
+  width: 88%;
 
   @media (max-width: $tablet-width) {
-    max-width: 391px;
-    width: 100%;
-    margin-right: -16px;
+    width: 82%;
   }
 
   @media (max-width: $mobile-width) {
-    display: none;
-    padding: 0;
-    margin: 0;
+    flex-direction: column;
+    width: auto;
+  }
+}
+
+.footer__navigation_wrapper {
+  display: flex;
+  width: 100%;
+
+  @media (max-width: $mobile-width) {
+    display: flex;
   }
 }
 
@@ -76,11 +100,20 @@
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
+  margin-right: 42px;
+  padding-top: 6px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 33px;
+    padding-top: 4px;
+  }
 
   @media (max-width: $mobile-width) {
     font-size: 16px;
     line-height: 19px;
     padding-bottom: 21px;
+    margin-right: 0;
+    padding-top: 0;
   }
 }
 
@@ -99,16 +132,15 @@
   width: 100%;
 
   @media (max-width: $tablet-width) {
-    margin-top: 4px;
+    margin-top: 0;
     max-width: 100px;
   }
 
   @media (max-width: $mobile-width) {
     max-width: 151px;
+    height: 37px;
     margin-right: auto;
     align-content: center;
-    margin-top: 14px;
-    margin-bottom: 50px;
     padding-left: 3px;
   }
 }
@@ -129,33 +161,5 @@
       min-width: 14px;
       min-height: 27px;
     }
-  }
-}
-
-.footer__navigation_mobile-one,
-.footer__navigation_mobile-two {
-  list-style: none;
-}
-
-.footer__navigation_mobile-wrapper {
-  display: none;
-
-  @media (max-width: $mobile-width) {
-    display: flex;
-  }
-}
-
-.footer__navigation_mobile-one {
-  padding-right: 80px;
-}
-
-.footer__logo_mobile {
-  @media (max-width: $mobile-width) {
-    font-family: $textBebas;
-    font-size: 20px;
-    line-height: 20px;
-    letter-spacing: 0.02em;
-    color: #ffffff;
-    margin-bottom: 20px;
   }
 }
