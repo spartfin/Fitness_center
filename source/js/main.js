@@ -1,4 +1,3 @@
-/* eslint-disable new-cap */
 'use strict';
 
 (function () {
@@ -26,7 +25,6 @@
 
   var activeBtn = function () {
     for (var i = 0; i < subscriptionBtn.length; i++) {
-      // eslint-disable-next-line no-shadow
       var activeButton = function (i) {
         subscriptionBtn[i].addEventListener('click', function () {
           prev = active;
@@ -46,9 +44,20 @@
 
 
   // Валидация номера телефона
-  // eslint-disable-next-line no-undef
-  IMask(document.getElementById('training-phone-mask'), {
-    mask: '+{7}(000)000-00-00'
+  var inp = document.querySelector('#tel');
+
+  // Проверяем фокус
+  inp.addEventListener('focus', _ => {
+    // Если там ничего нет или есть, но левое
+    if(!/^\+\d*$/.test(inp.value))
+      // То вставляем знак плюса как значение
+      inp.value = '+7';
+  });
+
+  inp.addEventListener('keypress', e => {
+    // Отменяем ввод не цифр
+    if(!/\d/.test(e.key))
+      e.preventDefault();
   });
 
 
