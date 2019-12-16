@@ -34,7 +34,8 @@
   padding-left: 78px;
   padding-right: 83px;
   padding-top: 77px;
-  height: 500px;
+  padding-bottom: 20px;
+  min-height: 500px;
   width: 100%;
 
   @media (max-width: $tablet-width) {
@@ -43,7 +44,7 @@
     padding-left: 45px;
     padding-right: 46px;
     padding-top: 46px;
-    height: 292px;
+    min-height: 292px;
     margin: 0 auto;
   }
 
@@ -55,7 +56,7 @@
     padding-top: 47px;
     padding-bottom: 51px;
     width: 290px;
-    height: 584px;
+    min-height: 584px;
     margin: 0 auto;
   }
 }
@@ -70,6 +71,7 @@
   color: #ffffff;
   letter-spacing: 0.02em;
   margin-bottom: 47px;
+  max-width: 343px;
 
   @media (max-width: $tablet-width) {
     font-size: 12px;
@@ -77,11 +79,16 @@
     /* or 18px */
     margin-bottom: 30px;
   }
+
+  @media (max-width: $mobile-width) {
+    max-width: 205px;
+  }
 }
 
 .promo__event_wrapper {
   display: flex;
   margin-bottom: 10px;
+  max-width: 343px;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 3px;

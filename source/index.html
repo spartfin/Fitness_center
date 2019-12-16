@@ -24,7 +24,6 @@
           <p>Тренажёрный зал Групповые занятия Кардио-зона</p>
           <a class="header__info_buy" href="#subscription">Купить абонемент</a>
         </div>
-        <div class="header__image"></div>
       </div>
       <div class="header__social">
         <a class="header__social_facebook" href="#">fb</a>
@@ -38,22 +37,14 @@
     <section class="gym">
       <div class="gym__info">
         <h2>Тренажерный зал</h2>
-        <div class="gym__info_size">
-          <p>Просторный зал площадью 900 кв/м</p>
-        </div>
-        <div class="gym__info_description">
-          <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для
-            укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех
-            спортсменов.</p>
-        </div>
-        <div class="gym__info_description_crossfit">
-          <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40
-            тренажерами.
-            Также в фитнес центре есть
-            несколько оборудованных залов для различных видов групповых занятий</p>
-        </div>
-      </div>
-      <div class="gym__image">
+        <p>Просторный зал площадью 900 кв/м</p>
+        <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для
+          укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех
+          спортсменов.</p>
+        <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40
+          тренажерами.
+          Также в фитнес центре есть
+          несколько оборудованных залов для различных видов групповых занятий</p>
       </div>
       <div class="gym__video">
         <picture>
@@ -66,8 +57,8 @@
     <section class="subscription" id="subscription">
       <h2>Абонементы</h2>
       <ul class="subscription__months">
-        <li class="subscription__months_item">
-          <button class=" subscription__btn subscription__item_one-month subscription__btn_active" type="button">1
+        <li class="subscription__months_item  subscription__btn_active">
+          <button class=" subscription__btn subscription__item_one-month" type="button">1
             месяц</button>
         </li>
         <li class="subscription__months_item">
@@ -81,22 +72,28 @@
         <li class="subscription__cards_item">
           <h3>С тренером</h3>
           <span class="subscription__description">12 занятий</span>
-          <span class="subscription__coint">5000</span class="subscription__description">
-          <span class="subscription__price">5000</span class="subscription__coint">
+          <div class="subscription__coint_wrap">
+            <span class="subscription__coint">5000</span>
+            <span class="subscription__price">5000</span>
+          </div>
           <a class="subscription__cards_item-buy" href="#">Купить абонемент</a>
         </li>
         <li class="subscription__cards_item">
           <h3>Дневной</h3>
-          <span class="subscription__description">с 8:00 до 17:00</span class="subscription__description">
-          <span class="subscription__coint">1700</span class="subscription__coint">
-          <span class="subscription__price">1700</span class="subscription__price">
+          <span class="subscription__description">с 8:00 до 17:00</span>
+          <div class="subscription__coint_wrap">
+            <span class="subscription__coint">1700</span>
+            <span class="subscription__price">1700</span>
+          </div>
           <a class="subscription__cards_item-buy" href="#">Купить абонемент</a>
         </li>
         <li class="subscription__cards_item">
           <h3 class="subscription__cards_item-title">Полный день</h3>
-          <span class="subscription__description">с 8:00 до 17:00</span class="subscription__description">
-          <span class="subscription__coint">2700</span class="subscription__coint">
-          <span class="subscription__price">2700</span class="subscription__price">
+          <span class="subscription__description">с 8:00 до 17:00</span>
+          <div class="subscription__coint_wrap">
+            <span class="subscription__coint">2700</span>
+            <span class="subscription__price">2700</span>
+          </div>
           <a class="subscription__cards_item-buy" href="#">Купить абонемент</a>
         </li>
       </ul>
@@ -125,7 +122,7 @@
             </div>
           </div>
         </div>
-        <p class="promo__description">Ежегодные соревнования по CrossFit</p>
+        <p>Ежегодные соревнования по CrossFit</p>
         <a class="promo__request" href="#">Заполнить заявку</a>
       </div>
     </section>
@@ -371,8 +368,7 @@
                 <input aria-label="Имя" type="text" name="login" placeholder="Имя" required>
               </label>
               <label class="contacts__training_form-item">
-                <input aria-label="Телефон" type="tel" id="tel" name="phone" placeholder="Телефон"
-                  required>
+                <input aria-label="Телефон" type="tel" id="tel" name="phone" placeholder="Телефон" required>
               </label>
             </div>
             <button class="contacts__training_button" type="submit">Отправить</button>
@@ -383,15 +379,13 @@
         <div class="contacts__info_form-wrapper">
           <h2>Контакты</h2>
           <div class="contacts__info_wrapper">
-            <div class="contacts__item_wrap">
-              <div class="contacts__info_item">
-                <h3>Адрес:</h3>
-                <p>г. Омск, ул. 60 лет Октября, 7</p>
-              </div>
-              <div class="contacts__info_item">
-                <h3>График работы:</h3>
-                <p>Пн-Вс: с 8:00 до 22:00</p>
-              </div>
+            <div class="contacts__info_item">
+              <h3>Адрес:</h3>
+              <p>г. Омск, ул. 60 лет Октября, 7</p>
+            </div>
+            <div class="contacts__info_item">
+              <h3>График работы:</h3>
+              <p>Пн-Вс: с 8:00 до 22:00</p>
             </div>
             <div class="contacts__info_item">
               <h3>Телефон:</h3>

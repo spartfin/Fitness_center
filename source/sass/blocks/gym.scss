@@ -1,28 +1,37 @@
 .gym {
   position: relative;
   display: flex;
-  max-width: 1180px;
+  max-width: 1160px;
   min-height: 756px;
   padding-top: 120px;
   padding-bottom: 235px;
   margin: 0 auto;
-  padding-left: 10px;
-  padding-right: 10px;
   justify-content: space-between;
+  background-image: url("../img/fitness-room.jpg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 120px;
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
+    min-height: 854px;
     padding-left: 45px;
     padding-right: 45px;
     padding-top: 98px;
-    padding-bottom: 183px;
+    padding-bottom: 15px;
+    background-image: url("../img/fitness-room-midlle.jpg");
+    background-position-x: center;
+    background-position-y: 328px;
   }
 
   @media (max-width: $mobile-width) {
+    min-height: 925px;
     padding-left: 0;
     padding-right: 0;
     padding-top: 68px;
     padding-bottom: 70px;
+    background-image: url("../img/fitness-room-small.jpg");
+    background-position-y: 335px;
   }
 }
 
@@ -59,19 +68,22 @@
   line-height: 49px;
   letter-spacing: 0.03em;
   color: #102654;
+  margin-bottom: 10px;
 
   @media (max-width: $tablet-width) {
     font-size: 42px;
     line-height: 42px;
+    margin-bottom: 11px;
   }
 
   @media (max-width: $mobile-width) {
     font-size: 32px;
     line-height: 32px;
+    margin-bottom: 8px;
   }
 }
 
-.gym__info_size p {
+.gym__info p:first-of-type {
   font-family: $textRoboto;
   font-style: normal;
   font-weight: normal;
@@ -79,21 +91,22 @@
   line-height: 150%;
   /* or 27px */
   color: #102654;
-  padding-top: 10px;
   letter-spacing: 0.019em;
+  margin-bottom: 39px;
 
   @media (max-width: $tablet-width) {
-    padding-top: 11px;
     padding-left: 3px;
+    margin-bottom: 34px;
   }
 
   @media (max-width: $mobile-width) {
     padding-left: 0;
-    padding-top: 8px;
+    margin-bottom: 24px;
+    padding-right: 0;
   }
 }
 
-.gym__info_description p {
+.gym__info p {
   font-family: $textRoboto;
   font-style: normal;
   font-weight: 300;
@@ -101,65 +114,24 @@
   line-height: 150%;
   /* or 24px */
   color: #102654;
-  padding-top: 38px;
-  padding-bottom: 10px;
   width: 359px;
+  margin-bottom: 8px;
 
   @media (max-width: $tablet-width) {
-    padding-top: 34px;
-    width: 100%;
-    padding-bottom: 0;
+    width: auto;
+    margin-bottom: 0;
   }
 
   @media (max-width: $mobile-width) {
-    padding-top: 23px;
-    padding-right: 25px;
+    padding-right: 30px;
   }
 }
 
-.gym__info_description_crossfit p {
-  font-family: $textRoboto;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 150%;
-  /* or 24px */
-  color: #102654;
-  letter-spacing: 0.008em;
+.gym__info p:last-of-type {
+  margin-bottom: 0;
 
   @media (max-width: $tablet-width) {
     display: none;
-  }
-}
-
-.gym__image {
-  max-width: 660px;
-  min-width: 660px;
-  min-height: 401px;
-  max-height: 401px;
-  z-index: -10;
-  background-image: url("../img/fitness-room.jpg");
-
-  @media (max-width: $tablet-width) {
-    max-width: 678px;
-    min-width: 678px;
-    width: 678px;
-    max-height: 345px;
-    margin-top: 42px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url("../img/fitness-room-midlle.jpg");
-  }
-
-  @media (max-width: $mobile-width) {
-    max-width: 320px;
-    min-width: 320px;
-    width: 320px;
-    max-height: 313px;
-    min-height: 313px;
-    height: 313px;
-    margin-top: 33px;
-    background-image: url("../img/fitness-room-small.jpg");
   }
 }
 
@@ -169,18 +141,20 @@
   bottom: 121px;
   left: 37.8%;
   height: 228px;
+  z-index: 10;
 
   @media (max-width: $tablet-width) {
     width: 266px;
     height: 167px;
     bottom: 155px;
     left: calc(50% - 133px);
+    top: 588px;
   }
 
   @media (max-width: $mobile-width) {
     position: relative;
     width: 320px;
-    bottom: 0;
+    top: 0;
     left: 0;
     margin: 0 auto;
     margin-top: 40px;

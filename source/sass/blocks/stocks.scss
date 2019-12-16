@@ -1,14 +1,15 @@
 .stocks {
-  min-height: 796px;
+  min-height: 746px;
   padding-top: 116px;
+  padding-bottom: 30px;
 
   @media (max-width: $tablet-width) {
-    min-height: 978px;
+    min-height: 928px;
     padding-top: 93px;
   }
 
   @media (max-width: $mobile-width) {
-    min-height: 1290px;
+    min-height: 1280px;
     padding-top: 69px;
   }
 }
@@ -21,18 +22,18 @@
   letter-spacing: 0.03em;
   color: #102654;
   text-align: center;
-  padding-bottom: 54px;
+  margin-bottom: 54px;
 
   @media (max-width: $tablet-width) {
     font-size: 42px;
     line-height: 42px;
-    padding-bottom: 44px;
+    margin-bottom: 44px;
   }
 
   @media (max-width: $mobile-width) {
     font-size: 32px;
     line-height: 32px;
-    padding-bottom: 45px;
+    margin-bottom: 45px;
   }
 }
 

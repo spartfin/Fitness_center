@@ -1,14 +1,16 @@
 .reviews {
   padding-bottom: 120px;
+  padding-top: 50px;
 
   @media (max-width: $tablet-width) {
     padding-bottom: 100px;
+    padding-top: 25px;
   }
 
   @media (max-width: $mobile-width) {
     padding: 0 47px;
     padding-bottom: 70px;
-    margin-top: 2px;
+    padding-top: 7px;
   }
 }
 
@@ -20,18 +22,18 @@
   letter-spacing: 0.03em;
   color: #102654;
   text-align: center;
-  padding-bottom: 55px;
+  margin-bottom: 55px;
 
   @media (max-width: $tablet-width) {
     font-size: 42px;
     line-height: 42px;
-    padding-bottom: 44px;
+    margin-bottom: 44px;
   }
 
   @media (max-width: $mobile-width) {
     font-size: 32px;
     line-height: 32px;
-    padding-bottom: 45px;
+    margin-bottom: 45px;
   }
 }
 

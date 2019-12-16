@@ -78,6 +78,11 @@ button:focus {
   outline: none;
 }
 
+a:focus,
+button:focus {
+  outline: #102654 solid 2px;
+}
+
 button::-moz-focus-inner {
   border: 0;
 }

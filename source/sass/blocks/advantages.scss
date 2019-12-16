@@ -25,7 +25,6 @@
   font-weight: 400;
   color: #102654;
   text-align: center;
-  padding-bottom: 2px;
 
   @media (max-width: $tablet-width) {
     font-size: 42px;
@@ -35,7 +34,7 @@
   @media (max-width: $mobile-width) {
     font-size: 32px;
     line-height: 32px;
-    padding-bottom: 55px;
+    margin-bottom: 55px;
   }
 }
 
@@ -48,7 +47,7 @@
 
   @media (max-width: $tablet-width) {
     width: 695px;
-    padding-top: 53px;
+    padding-top: 55px;
   }
 
   @media (max-width: $mobile-width) {
@@ -87,7 +86,7 @@
 .advantages__card {
   display: flex;
   width: 360px;
-  padding-top: 63px;
+  padding-top: 65px;
   padding-bottom: 87px;
   padding-left: 20px;
   padding-right: 10px;
@@ -208,7 +207,7 @@
   width: 240px;
   height: 307px;
   background: #1c3374;
-  top: 70px;
+  top: calc(50% - 165px);
   left: calc(50% - 120px);
   padding-top: 66px;
   padding-left: 30px;
@@ -217,7 +216,7 @@
   @media (max-width: $tablet-width) {
     width: 442px;
     height: 239px;
-    top: 165px;
+    top: calc(50% - 95px);
     left: calc(50% - 221px);
     padding-top: 45px;
     padding-left: 130px;

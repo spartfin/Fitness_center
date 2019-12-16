@@ -1,3 +1,5 @@
+/* eslint-disable no-shadow */
+/* eslint-disable no-unused-expressions */
 'use strict';
 
 (function () {
@@ -21,7 +23,7 @@
   // Переключение кнопок в блоке абонементы
   var active = 0;
   var prev = 0;
-  var subscriptionBtn = document.getElementsByClassName('subscription__btn');
+  var subscriptionBtn = document.getElementsByClassName('subscription__months_item');
 
   var activeBtn = function () {
     for (var i = 0; i < subscriptionBtn.length; i++) {
@@ -47,17 +49,18 @@
   var inp = document.querySelector('#tel');
 
   // Проверяем фокус
-  inp.addEventListener('focus', _ => {
+  inp.addEventListener('focus', function () {
     // Если там ничего нет или есть, но левое
-    if (!/^\+\d*$/.test(inp.value))
-      // То вставляем знак плюса как значение
+    if (!/^\+\d*$/.test(inp.value)) {
       inp.value = '+7';
+    }
   });
 
-  inp.addEventListener('keypress', e => {
+  inp.addEventListener('keypress', function (e) {
     // Отменяем ввод не цифр
-    if (!/\d/.test(e.key))
+    if (!/\d/.test(e.key)) {
       e.preventDefault();
+    }
   });
 
 
