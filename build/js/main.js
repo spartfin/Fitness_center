@@ -105,14 +105,29 @@
 
   // Слайдер блока тренеры
   var activeTrainer = 0;
-  var prevTrainer = 0;
   var leftArrow = document.querySelector('.trainers__click_left');
   var rightArrow = document.querySelector('.trainers__click_right');
   var slidesTrainers = document.getElementsByClassName('trainers__list_card');
+  var widthWindow = document.body.clientWidth;
+
+  window.addEventListener('resize', function () {
+    var newWidthWindow = document.body.clientWidth;
+    if (widthWindow !== newWidthWindow) {
+      setTimeout(function () {
+        window.location.reload();
+      }, 2000);
+    }
+  });
 
   var clickRightArrow = function () {
     rightArrow.addEventListener('click', function () {
-      activeTrainer >= 0 && activeTrainer < slidesTrainers.length - 1 ? ++activeTrainer : activeTrainer = 0;
+      if (widthWindow <= 767) {
+        activeTrainer >= 0 && activeTrainer < slidesTrainers.length - 1 ? ++activeTrainer : activeTrainer = 0;
+      } else if (widthWindow >= 768 && widthWindow <= 1199) {
+        activeTrainer >= 0 && activeTrainer < slidesTrainers.length / 2 - 1 ? ++activeTrainer : activeTrainer = 0;
+      } else if (widthWindow >= 1200) {
+        activeTrainer >= 0 && activeTrainer < slidesTrainers.length / 4 - 1 ? ++activeTrainer : activeTrainer = 0;
+      }
       changeActiveSlide();
     });
   };
@@ -120,17 +135,27 @@
 
   var clickLeftArrow = function () {
     leftArrow.addEventListener('click', function () {
-      activeTrainer > 0 ? --activeTrainer : activeTrainer = slidesTrainers.length - 1;
+      if (widthWindow <= 767) {
+        activeTrainer > 0 ? --activeTrainer : activeTrainer = slidesTrainers.length - 1;
+      } else if (widthWindow >= 768 && widthWindow <= 1199) {
+        activeTrainer > 0 ? --activeTrainer : activeTrainer = slidesTrainers.length / 2 - 1;
+      } else if (widthWindow >= 1200) {
+        activeTrainer >= 0 && activeTrainer < slidesTrainers.length / 4 - 1 ? ++activeTrainer : activeTrainer = 0;
+      }
       changeActiveSlide();
     });
   };
   clickLeftArrow();
 
   var changeActiveSlide = function () {
-    slidesTrainers[prevTrainer].classList.remove('slide__Active');
-    slidesTrainers[activeTrainer].classList.add('slide__Active');
     for (var i = 0; i < slidesTrainers.length; i++) {
-      slidesTrainers[i].style.transform = 'translate(' + -(activeTrainer * 226) + 'px)';
+      if (widthWindow <= 767) {
+        slidesTrainers[i].style.transform = 'translate(' + -(activeTrainer * 226) + 'px)';
+      } else if (widthWindow >= 768 && widthWindow <= 1199) {
+        slidesTrainers[i].style.transform = 'translate(' + -(activeTrainer * 596) + 'px)';
+      } else if (widthWindow >= 1200) {
+        slidesTrainers[i].style.transform = 'translate(' + -(activeTrainer * 1190) + 'px)';
+      }
     }
   };
 

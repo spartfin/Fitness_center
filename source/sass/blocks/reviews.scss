@@ -117,12 +117,18 @@
 }
 
 .reviews__click_left {
+  height: 34px;
   position: absolute;
   left: -56px;
   top: calc(50% - 19px);
   cursor: pointer;
 
+  @media (max-width: $tablet-width) {
+    height: 34px;
+  }
+
   @media (max-width: $mobile-width) {
+    height: 19px;
     left: -32px;
     top: calc(50% - 10px);
   }
@@ -141,14 +147,20 @@
 }
 
 .reviews__click_right {
+  height: 34px;
   position: absolute;
   right: -56px;
   top: calc(50% - 19px);
   cursor: pointer;
 
+  @media (max-width: $tablet-width) {
+    height: 34px;
+  }
+
   @media (max-width: $mobile-width) {
     right: -32px;
     top: calc(50% - 10px);
+    height: 19px;
   }
 
   &:hover {
