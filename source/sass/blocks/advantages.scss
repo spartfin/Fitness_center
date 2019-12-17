@@ -54,33 +54,6 @@
     width: 100%;
     padding-top: 0;
   }
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 340px;
-    height: 2px;
-    background-color: rgba(209, 10, 66, 0.2);
-    top: 224px;
-
-    @media (max-width: $tablet-width) {
-      content: none;
-    }
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-    width: 340px;
-    height: 2px;
-    background-color: rgba(209, 10, 66, 0.2);
-    top: 224px;
-    right: 0;
-
-    @media (max-width: $tablet-width) {
-      content: none;
-    }
-  }
 }
 
 .advantages__card {
@@ -90,6 +63,48 @@
   padding-bottom: 87px;
   padding-left: 20px;
   padding-right: 10px;
+
+  &:nth-child(odd) {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 340px;
+      height: 2px;
+      background-color: rgba(209, 10, 66, 0.2);
+      top: -11px;
+      left: 0;
+
+      @media (max-width: $tablet-width) {
+        content: none;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 340px;
+      height: 2px;
+      background-color: rgba(209, 10, 66, 0.2);
+      top: -11px;
+      right: -680px;
+
+      @media (max-width: $tablet-width) {
+        content: none;
+      }
+    }
+  }
+
+  &:first-child {
+    &::before {
+      content: none;
+    }
+
+    &::after {
+      content: none;
+    }
+  }
 
   &:nth-of-type(2n) {
     margin-left: calc(100% - 2 * 360px);
