@@ -222,8 +222,9 @@
   width: 240px;
   height: 307px;
   background: #1c3374;
-  top: calc(50% - 165px);
-  left: calc(50% - 120px);
+  transform: translate(-50%, -50%);
+  top: 47.5%;
+  left: 50%;
   padding-top: 66px;
   padding-left: 30px;
   padding-right: 30px;
@@ -231,8 +232,7 @@
   @media (max-width: $tablet-width) {
     width: 442px;
     height: 239px;
-    top: calc(50% - 95px);
-    left: calc(50% - 221px);
+    top: 54.5%;
     padding-top: 45px;
     padding-left: 130px;
     padding-right: 130px;
