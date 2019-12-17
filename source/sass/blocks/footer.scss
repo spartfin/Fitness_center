@@ -36,60 +36,50 @@
   line-height: 26px;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-right: auto;
+  width: 89px;
+  margin-right: 70px;
 
   @media (max-width: $tablet-width) {
     font-size: 24px;
     line-height: 24px;
+    margin-right: 63px;
   }
 
   @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.footer__logo_mod {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
     font-family: $textBebas;
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 0.02em;
     color: #ffffff;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     margin-right: 0;
   }
 }
 
-.footer__navigation_one,
-.footer__navigation_two {
+.footer__navigation {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
-}
-
-.footer__navigation_one {
-  display: flex;
+  max-width: 480px;
   width: 100%;
-
-  @media (max-width: $mobile-width) {
-    flex-direction: column;
-    margin-right: 80px;
-    width: auto;
-  }
-}
-
-.footer__navigation_two {
-  display: flex;
-  width: 88%;
+  padding-top: 7px;
 
   @media (max-width: $tablet-width) {
-    width: 82%;
+    padding-top: 5px;
   }
 
   @media (max-width: $mobile-width) {
-    flex-direction: column;
-    width: auto;
-  }
-}
-
-.footer__navigation_wrapper {
-  display: flex;
-  width: 100%;
-
-  @media (max-width: $mobile-width) {
-    display: flex;
+    max-width: 290px;
+    padding-top: 0;
   }
 }
 
@@ -101,19 +91,67 @@
   line-height: 16px;
   color: #ffffff;
   margin-right: 42px;
-  padding-top: 6px;
+  margin-bottom: 10px;
+
+  &:first-child {
+    display: none;
+
+    @media (max-width: $mobile-width) {
+      display: block;
+    }
+  }
 
   @media (max-width: $tablet-width) {
     margin-right: 33px;
-    padding-top: 4px;
   }
 
   @media (max-width: $mobile-width) {
     font-size: 16px;
     line-height: 19px;
-    padding-bottom: 21px;
-    margin-right: 0;
+    width: 95px;
     padding-top: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+
+    &:first-child {
+      margin-top: 0px;
+    }
+
+    &:nth-child(odd) {
+      margin-right: 66px;
+    }
+  }
+}
+
+.footer__navigation .footer__navigation_services {
+  @media (max-width: $mobile-width) {
+    order: 2;
+    margin-right: 66px;
+  }
+}
+
+.footer__navigation_subscription {
+  @media (max-width: $mobile-width) {
+    order: 4;
+  }
+}
+
+.footer__navigation_stocks {
+  @media (max-width: $mobile-width) {
+    order: 1;
+  }
+}
+
+.footer__navigation .footer__navigation_trainers {
+  @media (max-width: $mobile-width) {
+    order: 3;
+    margin-right: 0;
+  }
+}
+
+.footer__navigation_schedule {
+  @media (max-width: $mobile-width) {
+    order: 5;
   }
 }
 
