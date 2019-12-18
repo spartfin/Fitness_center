@@ -322,25 +322,6 @@
   height: auto;
   padding-left: 4px;
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 1px;
-    height: 102px;
-    background-color: #74819c;
-    top: 6px;
-    left: 235px;
-
-    @media (max-width: $tablet-width) {
-      height: 129px;
-      left: 266px;
-    }
-
-    @media (max-width: $mobile-width) {
-      content: none;
-    }
-  }
-
   @media (max-width: $tablet-width) {
     width: 462px;
     height: auto;
@@ -358,6 +339,29 @@
 
 .contacts__info_item {
   margin-bottom: 18px;
+
+  &:nth-child(odd) {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 67px;
+      background-color: #74819c;
+      top: -10px;
+      left: 235px;
+
+      @media (max-width: $tablet-width) {
+        height: 129px;
+        left: 266px;
+      }
+
+      @media (max-width: $mobile-width) {
+        content: none;
+      }
+    }
+  }
 
   @media (max-width: $mobile-width) {
     margin-bottom: 20px;
